@@ -1,9 +1,8 @@
 import React, {useContext} from 'react';
 import {BookContext} from '../Contexts/BookContext';
-import bookThumb from '../book.png';
 
 const BookList = () => {
-    const [books, deleteBook] = useContext(BookContext);
+    const {books, deleteBook} = useContext(BookContext);
 
     return (
         <div className="section section-books">
@@ -11,17 +10,11 @@ const BookList = () => {
                 <h6>Books</h6>
                 <ul>
                     {books.map(book => (
-                        <li key={book.id}>
+                        <li key={book}>
                             <div className="card book">
-                                <div className="book-image">
-                                    <img src={bookThumb} alt="book thumb" />
-                                </div>
                                 <div className="book-details">
                                     <div className="book-title">{book.title}</div>
                                     <div className="book-author">{book.author}</div>
-                                </div>
-                                <div className="book-delete" onClick={() => deleteBook(book.id)}>
-                                    <i className="material-icons">delete</i>
                                 </div>
                             </div>
                         </li>

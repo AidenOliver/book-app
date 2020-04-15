@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const Navbar = () => {
     useEffect(() => {
         const elems = document.querySelectorAll('.sidenav');
-        window.MSAssertion.Sidenav.init(elems, {edge: 'right'});
+        window.M.Sidenav.init(elems, {edge: 'right'});
     });
 
     return (
@@ -12,7 +12,7 @@ const Navbar = () => {
             <nav className="z-depth-0">
                 <div className="nav-wrapper">
                     <a href='/' className="brand">
-                        book<span>app</span>
+                        Book<span>List</span>
                     </a>
                     <a 
                         href="#!"
@@ -55,3 +55,5 @@ const Navbar = () => {
         </Fragment>
     );
 };
+
+export default Navbar;

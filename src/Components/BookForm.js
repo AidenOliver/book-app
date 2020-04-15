@@ -64,3 +64,5 @@ const BookForm = () => {
         </div>
     );
 };
+
+export default BookForm;

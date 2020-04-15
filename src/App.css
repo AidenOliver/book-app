@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+:root {
+  --theme: #45c9b3;
+  --bg-grey: #f5f5f5;
+  --border: #e0e0e0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  background: var(--theme);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav .brand {
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav .brand span {
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+.section-books {
+  background: var(--bg-grey);
+  border-bottom: 1px solid var(--border);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card.book {
+  display: grid;
+  grid-template-areas: 'image details delete';
+  grid-template-columns: 80px 1fr 40px;
+  padding: 1rem;
+}
+
+.book-details {
+  grid-area: details;
+  color: #616161;
+}
+
+.book-title {
+  font-weight: 700;
+}
+
+.book-author {
+  font-size: 0.8rem;
+}
+
+form .input-field {
+  margin: 2rem 0;
 }
