@@ -10,7 +10,7 @@ const Navbar = () => {
         <Fragment>
             <nav className="z-depth-0">
                 <div className="nav-wrapper">
-                    <a href='/' className="brand">
+                    <a className="brand">
                         Book<span>List</span>
                     </a>
                     <a 
