@@ -9,12 +9,8 @@ import './App.css';
 const App = () => {
   return (
     <BookContextProvider>
-      <BrowserRouter>
         <Navbar />
-        <Switch>
-          <Route exact path='/' component={Dashboard} />
-        </Switch>
-      </BrowserRouter>
+        <Dashboard />
     </BookContextProvider>
   )
 }
