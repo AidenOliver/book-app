@@ -54,7 +54,7 @@ const BookForm = () => {
                     <div className="input-field center">
                         <button
                             type="submit"
-                            className="btn waves-effect waves-light amber darken-2"
+                            className="btn waves-effect waves-light #45c9b3"
                         >
                             <i className="material-icons right">add_circle</i>Add
                         </button>

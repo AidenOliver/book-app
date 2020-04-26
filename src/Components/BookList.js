@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import {BookContext} from '../Contexts/BookContext';
 
 const BookList = () => {
-    const {books, deleteBook} = useContext(BookContext);
+    const {books} = useContext(BookContext);
 
     return (
         <div className="section section-books">
